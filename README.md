@@ -9,7 +9,33 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+* demo.gif
+
+<img alt="Demo" src="/References/demo.gif?raw=true" width="290">&nbsp;
+
+
+* sample code
+
+```swift
+@IBOutlet weak var nameTextField: ValidationTextField!
+@IBOutlet weak var passwordTextField: ValidationTextField!
+@IBOutlet weak var passwordConfirmTextField: ValidationTextField!
+@IBOutlet weak var emailTextField: ValidationTextField!
+
+override func viewDidLoad() {
+  super.viewDidLoad()
+  nameTextField.validCondition = {$0.count > 5}
+  emailTextField.validCondition = {$0.count > 5 && $0.contains("@")}
+  passwordTextField.validCondition = {$0.count > 8}
+  passwordConfirmTextField.validCondition = {
+    guard let password = self.passwordTextField.text else {
+      return false
+    }
+    return $0 == password
+  }
+
+}
+```
 
 ## Installation
 
