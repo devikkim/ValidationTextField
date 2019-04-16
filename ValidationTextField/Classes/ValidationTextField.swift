@@ -261,7 +261,7 @@ open class ValidationTextField: UITextField {
             titleLabel.text = errorMessage
             titleLabel.textColor = errorColor
             lineView.backgroundColor = errorColor
-        } else if editingOrSelected {
+        } else if editingOrSelected || self.text ?? "" != "" {
             titleLabel.text = completedTitleText
             titleLabel.textColor = completedColor
             lineView.backgroundColor = completedColor
