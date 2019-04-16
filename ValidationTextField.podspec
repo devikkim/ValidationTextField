@@ -29,7 +29,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.swift_version = '4.0'
-  s.swift_versions = '4.0'
   s.source_files = 'ValidationTextField/Classes/**/*'
   
   # s.resource_bundles = {
