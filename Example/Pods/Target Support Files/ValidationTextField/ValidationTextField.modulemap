@@ -1,0 +1,6 @@
+framework module ValidationTextField {
+  umbrella header "ValidationTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

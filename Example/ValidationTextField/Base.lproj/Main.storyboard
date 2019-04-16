@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,90 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jBF-iK-ras">
+                                <rect key="frame" x="37.5" y="224" width="300" height="219"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WjA-dA-utA" customClass="ValidationTextField" customModule="ValidationTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="39.5"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="completedTitleText" value="It's good name!"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="sorry, enter your name!"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your name"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CkR-sk-DYQ" customClass="ValidationTextField" customModule="ValidationTextField">
+                                        <rect key="frame" x="0.0" y="47.5" width="300" height="39"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter password"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="completedTitleText" value="Valid password"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Invalid password"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rw0-nI-IKX" customClass="ValidationTextField" customModule="ValidationTextField">
+                                        <rect key="frame" x="0.0" y="94.5" width="300" height="39"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="completedTitleText" value="It matched password!"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm password"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="It is no matched password."/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pJO-sQ-ntS" customClass="ValidationTextField" customModule="ValidationTextField">
+                                        <rect key="frame" x="0.0" y="141.5" width="300" height="39.5"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="completedTitleText" value="Valid Email"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Invalid Email!"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your email"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-vn-Xuz">
+                                        <rect key="frame" x="0.0" y="189" width="300" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" causesPageTurn="YES"/>
+                                        </accessibility>
+                                        <state key="normal" title="Confirm">
+                                            <color key="titleColor" red="0.90588235289999997" green="0.92941176469999998" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchConfirm:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="awb-EZ-Vbu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HVu-Ru-WU3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.92941176469999998" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jBF-iK-ras" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="04d-0i-ptQ"/>
+                            <constraint firstItem="jBF-iK-ras" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="qi2-He-ucR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="comfirmButton" destination="Wbh-vn-Xuz" id="K73-br-c6J"/>
+                        <outlet property="emailTextField" destination="pJO-sQ-ntS" id="qjl-my-xyt"/>
+                        <outlet property="nameTextField" destination="WjA-dA-utA" id="c2L-JX-QM9"/>
+                        <outlet property="passwordConfirmTextField" destination="rw0-nI-IKX" id="trh-aU-Itj"/>
+                        <outlet property="passwordTextField" destination="CkR-sk-DYQ" id="cvt-Te-HXk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

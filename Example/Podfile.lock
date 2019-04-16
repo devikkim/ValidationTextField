@@ -1,0 +1,16 @@
+PODS:
+  - ValidationTextField (0.1.0)
+
+DEPENDENCIES:
+  - ValidationTextField (from `../`)
+
+EXTERNAL SOURCES:
+  ValidationTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ValidationTextField: 0a6eff7608ad7f556fae64ebf97783fc10724c48
+
+PODFILE CHECKSUM: 705b7a81684f9ddfd899644e1236fc38520f34ad
+
+COCOAPODS: 1.6.1

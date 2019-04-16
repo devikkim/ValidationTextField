@@ -1,0 +1,22 @@
+{
+  "name": "ValidationTextField",
+  "version": "0.1.0",
+  "summary": "A short description of ValidationTextField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/devikkim@gmail.com/ValidationTextField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "devikkim@gmail.com": "devikkim@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/devikkim@gmail.com/ValidationTextField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ValidationTextField/Classes/**/*"
+}

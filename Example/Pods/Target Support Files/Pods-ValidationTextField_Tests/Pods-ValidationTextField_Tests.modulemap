@@ -1,0 +1,6 @@
+framework module Pods_ValidationTextField_Tests {
+  umbrella header "Pods-ValidationTextField_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
