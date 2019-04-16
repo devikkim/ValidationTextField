@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/devikkim/ValidationTextField.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'devikkim@gmail.com' => 'devikkim@gmail.com' }
   s.source           = { :git => 'https://github.com/devikkim/ValidationTextField.git', :tag => s.version.to_s }
 
