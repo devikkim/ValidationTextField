@@ -26,4 +26,4 @@ devikkim@gmail.com
 
 ## License
 
-ValidationTextField is available under the MIT license. See the LICENSE file for more info.
+Apache License Version 2.0
