@@ -2,7 +2,6 @@
 
 [![CI Status](https://img.shields.io/travis/devikkim@gmail.com/ValidationTextField.svg?style=flat)](https://travis-ci.org/devikkim@gmail.com/ValidationTextField)
 [![Version](https://img.shields.io/cocoapods/v/ValidationTextField.svg?style=flat)](https://cocoapods.org/pods/ValidationTextField)
-[![License](https://img.shields.io/cocoapods/l/ValidationTextField.svg?style=flat)](https://cocoapods.org/pods/ValidationTextField)
 [![Platform](https://img.shields.io/cocoapods/p/ValidationTextField.svg?style=flat)](https://cocoapods.org/pods/ValidationTextField)
 
 ## Example
