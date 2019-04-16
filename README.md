@@ -22,7 +22,7 @@ pod 'ValidationTextField'
 
 ## Author
 
-devikkim@gmail.com, devikkim@gmail.com
+devikkim@gmail.com
 
 ## License
 
