@@ -39,20 +39,20 @@
 /* Begin PBXFileReference section */
 		046B56879D979323766A84419CF2C647 /* Pods-ValidationTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValidationTextField_Example-dummy.m"; sourceTree = "<group>"; };
 		05F8D191091F7B89CD3AE3AB1E3E21DA /* Pods-ValidationTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		0DA7E69CEB0D2B3397EE8CF2378F24D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0DA7E69CEB0D2B3397EE8CF2378F24D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		121CC89A44DFFBA5B796A0A797AAB2A7 /* ValidationTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationTextField.swift; path = ValidationTextField/Classes/ValidationTextField.swift; sourceTree = "<group>"; };
-		18479AD872173580C8A492EAC98446FF /* Pods_ValidationTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ValidationTextField_Tests.framework; path = "Pods-ValidationTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18479AD872173580C8A492EAC98446FF /* Pods_ValidationTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValidationTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3313712AF13F960AC9968B1E0E040282 /* Pods-ValidationTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		400BF197973118AC86B9D5EF934188B7 /* Pods-ValidationTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValidationTextField_Example.modulemap"; sourceTree = "<group>"; };
 		4D5769716FD9B61E9664A40CFB18B1DD /* Pods-ValidationTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4D6B7811E5DA0D98CC4A5F957757A0A9 /* ValidationTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ValidationTextField.framework; path = ValidationTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6B7811E5DA0D98CC4A5F957757A0A9 /* ValidationTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValidationTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A4B5FC8EBECEC1ABDBF3516412DD50 /* Pods-ValidationTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValidationTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5C11F57D7B631575234BFB31C6617594 /* ValidationTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ValidationTextField.modulemap; sourceTree = "<group>"; };
 		81413869B558F5C0F7731BFC14AC7DF6 /* Pods-ValidationTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValidationTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8495CC61D80C053D4A245D8CB3E7F018 /* Pods-ValidationTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8FD89C6E81F65A9D05634A9939E084E8 /* Pods-ValidationTextField_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Example-Info.plist"; sourceTree = "<group>"; };
 		9542B0DDAEFF720700AE48896922FC82 /* ValidationTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValidationTextField-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E54D9E6D2A4350A7A73E14843ACCCB7 /* Pods-ValidationTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Tests-Info.plist"; sourceTree = "<group>"; };
 		9F0F8F118E973912D4E1309A176EA8DB /* ValidationTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValidationTextField.xcconfig; sourceTree = "<group>"; };
 		ABCB9C9B6DA53B0E45EEB8176106A1CC /* Pods-ValidationTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValidationTextField_Tests.modulemap"; sourceTree = "<group>"; };
@@ -60,14 +60,14 @@
 		B0039FBBAA3099D73375FC4A70FAF7BC /* Pods-ValidationTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValidationTextField_Example-umbrella.h"; sourceTree = "<group>"; };
 		B67B9DA4598C3FA308641E99615ECD12 /* Pods-ValidationTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValidationTextField_Tests-dummy.m"; sourceTree = "<group>"; };
 		BC96540E7F4732096C4B016C482C5496 /* Pods-ValidationTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValidationTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		BDCC6A5F8B90712EB8CFCA58EC93EF61 /* Pods_ValidationTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ValidationTextField_Example.framework; path = "Pods-ValidationTextField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCC6A5F8B90712EB8CFCA58EC93EF61 /* Pods_ValidationTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValidationTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA61208F755962A6E338895C383FAB9 /* ValidationTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValidationTextField-prefix.pch"; sourceTree = "<group>"; };
-		C91F2DA4B25B4CAFB7F5156172EA0768 /* ValidationTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ValidationTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C91F2DA4B25B4CAFB7F5156172EA0768 /* ValidationTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ValidationTextField.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D1EEAE99F88BEE938A8519799BF4E68C /* Pods-ValidationTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D77826EFAB1DB9287FD93C017752DDAA /* Pods-ValidationTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9251DFBA56FCD8AB0D34C6255A24FB /* ValidationTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValidationTextField-umbrella.h"; sourceTree = "<group>"; };
-		E4F474B5307AA99DCC494FFCFB7A0BF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E4F474B5307AA99DCC494FFCFB7A0BF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F481EE39A5A0E5916DE8DB7B99E49AE4 /* Pods-ValidationTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ValidationTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -321,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -717,8 +718,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
