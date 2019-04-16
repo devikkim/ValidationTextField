@@ -4,9 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ValidationTextField.svg?style=flat)](https://cocoapods.org/pods/ValidationTextField)
 [![Platform](https://img.shields.io/cocoapods/p/ValidationTextField.svg?style=flat)](https://cocoapods.org/pods/ValidationTextField)
 
-A UITextField that easy validate text of UITextField 
-Based on [SkyFloatingLabelTextField](https://github.com/Skyscanner/SkyFloatingLabelTextField)
-
+A UITextField that easy validate text of UITextField
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
