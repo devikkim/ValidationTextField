@@ -26,9 +26,10 @@ open class ValidationTextField: UITextField {
     }
     
     @IBInspectable
-    open var completedTitleFont: UIFont = .systemFont(ofSize: 13) {
+    open var completedTitleFont: UIFont = .systemFont(ofSize: 17) {
         didSet{
             update()
+            createTitleLabel()
         }
     }
     
@@ -47,9 +48,25 @@ open class ValidationTextField: UITextField {
     }
     
     @IBInspectable
+    open var baseFont: UIFont = .systemFont(ofSize: 17) {
+        didSet{
+            update()
+            createTitleLabel()
+        }
+    }
+    
+    @IBInspectable
     open var errorColor: UIColor = UIColor(red:0.99, green:0.16, blue:0.11, alpha:1.0) {
         didSet{
             update()
+        }
+    }
+    
+    @IBInspectable
+    open var errorFont: UIFont = .systemFont(ofSize: 17) {
+        didSet{
+            update()
+            createTitleLabel()
         }
     }
     
@@ -155,7 +172,7 @@ open class ValidationTextField: UITextField {
         
         self.updateTitleVisibility(true)
     }
-
+    
     private func createTitleLabel() {
         let titleLabel = UILabel()
         
@@ -260,14 +277,17 @@ open class ValidationTextField: UITextField {
         if hasErrorMessage{
             titleLabel.text = errorMessage
             titleLabel.textColor = errorColor
+            titleLabel.font = errorFont
             lineView.backgroundColor = errorColor
         } else if editingOrSelected || self.text ?? "" != "" {
             titleLabel.text = completedTitleText
             titleLabel.textColor = completedColor
+            titleLabel.font = completedTitleFont
             lineView.backgroundColor = completedColor
         } else {
             titleLabel.text = completedTitleText
             titleLabel.textColor = completedColor
+            titleLabel.font = baseFont
             lineView.backgroundColor = baseColor
         }
         
