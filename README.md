@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 * can change success image, error image
 
-<img alt="Demo" src="/References/demo.jpg?raw=true" width="290">&nbsp;
+<img alt="Demo" src="/References/demo.png?raw=true" width="290">&nbsp;
 
 * sample code
 
