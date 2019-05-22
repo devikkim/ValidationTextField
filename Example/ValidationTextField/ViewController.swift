@@ -51,6 +51,18 @@ class ViewController: UIViewController {
         emailTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         passwordConfirmTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+      
+      nameTextField.successImage = UIImage(named: "success")
+      nameTextField.errorImage = UIImage(named: "error")
+      
+      passwordTextField.successImage = UIImage(named: "thumb_up")
+      passwordTextField.errorImage = UIImage(named: "thumb_down")
+      
+      passwordConfirmTextField.successImage = UIImage(named: "thumb_up")
+      passwordConfirmTextField.errorImage = UIImage(named: "thumb_down")
+
+      emailTextField.successImage = UIImage(named: "success")
+      emailTextField.errorImage = UIImage(named: "error")
     }
     
     @objc func textFieldDidChange(_ textfield: UITextField) {
