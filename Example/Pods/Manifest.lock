@@ -1,5 +1,5 @@
 PODS:
-  - ValidationTextField (0.1.0)
+  - ValidationTextField (0.1.1)
 
 DEPENDENCIES:
   - ValidationTextField (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ValidationTextField: 0a6eff7608ad7f556fae64ebf97783fc10724c48
+  ValidationTextField: ecef135e7130fb1e6fcfeff0ec0a7db3eeac4d24
 
 PODFILE CHECKSUM: 705b7a81684f9ddfd899644e1236fc38520f34ad
 

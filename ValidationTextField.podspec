@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ValidationTextField'
-  s.version          = '0.1.1'
+  s.version          = '1.0.0'
   s.summary          = 'This TextField for Validation ( complete or error )'
 
 # This description is used to generate tags and improve search results.
@@ -27,14 +27,11 @@ Pod::Spec.new do |s|
   s.author           = { 'devikkim@gmail.com' => 'devikkim@gmail.com' }
   s.source           = { :git => 'https://github.com/devikkim/ValidationTextField.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.swift_version = '4.0'
   s.source_files = 'ValidationTextField/Classes/**/*'
+  s.resources = "ValidationTextField/Assets/*.png"
   
-  # s.resource_bundles = {
-  #   'ValidationTextField' => ['ValidationTextField/Assets/*.png']
-  # }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

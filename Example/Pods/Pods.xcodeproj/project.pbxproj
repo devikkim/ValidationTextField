@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0B04ED7431B6EDD02749D72ED36A31D7 /* Pods-ValidationTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC96540E7F4732096C4B016C482C5496 /* Pods-ValidationTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12D68474A37AC0D00F7FFACE0E0CE634 /* ValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121CC89A44DFFBA5B796A0A797AAB2A7 /* ValidationTextField.swift */; };
-		3E347EADCC5A5AC8BF3F6F3E8E956E6F /* ValidationTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0BF6E46110A46A7A479094B903D475 /* ValidationTextField-dummy.m */; };
-		4CBD417C097533E8414AFEE6E6EB57B0 /* ValidationTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB9251DFBA56FCD8AB0D34C6255A24FB /* ValidationTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D68474A37AC0D00F7FFACE0E0CE634 /* ValidationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2CE532E5FCEFE2D82D34A02AEB4BC3 /* ValidationTextField.swift */; };
+		1C6DB809C0E0EEFAB122B82EF2B2AE06 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = DABD14F99A467C39B391EEA084D5D415 /* success.png */; };
+		3E347EADCC5A5AC8BF3F6F3E8E956E6F /* ValidationTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B949545CA1BBC15BA7DE642D173E5D /* ValidationTextField-dummy.m */; };
+		4CBD417C097533E8414AFEE6E6EB57B0 /* ValidationTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B6FAC2E04FF9A4D7F2D3BA880B766D3 /* ValidationTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		53B4B73EDB17321989200C850FB054A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		5632CE96296712504CCA5BF2ECEB600F /* Pods-ValidationTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B56879D979323766A84419CF2C647 /* Pods-ValidationTextField_Example-dummy.m */; };
 		641606713B018D165B8D2896FDFCF993 /* Pods-ValidationTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B67B9DA4598C3FA308641E99615ECD12 /* Pods-ValidationTextField_Tests-dummy.m */; };
+		B47DEFA46C08EC00F935FF76AB3B1A42 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C709DB5B4EEC23BDE514D7BD5C57D /* error.png */; };
 		C2377E4F7BA4FECDC6E7EA535DB4E806 /* Pods-ValidationTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0039FBBAA3099D73375FC4A70FAF7BC /* Pods-ValidationTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C4CABB2BAA504241EF12D17BC1334777 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		D2E398B30F7BC3FE617772D65B895CF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -39,35 +41,37 @@
 /* Begin PBXFileReference section */
 		046B56879D979323766A84419CF2C647 /* Pods-ValidationTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValidationTextField_Example-dummy.m"; sourceTree = "<group>"; };
 		05F8D191091F7B89CD3AE3AB1E3E21DA /* Pods-ValidationTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		0DA7E69CEB0D2B3397EE8CF2378F24D3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		121CC89A44DFFBA5B796A0A797AAB2A7 /* ValidationTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationTextField.swift; path = ValidationTextField/Classes/ValidationTextField.swift; sourceTree = "<group>"; };
 		18479AD872173580C8A492EAC98446FF /* Pods_ValidationTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValidationTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A92EA0AD116AC89528E9F0C68E35C88 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3313712AF13F960AC9968B1E0E040282 /* Pods-ValidationTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		400BF197973118AC86B9D5EF934188B7 /* Pods-ValidationTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValidationTextField_Example.modulemap"; sourceTree = "<group>"; };
+		439F576FB18A95B9267EC57B6AD1998D /* ValidationTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ValidationTextField.modulemap; sourceTree = "<group>"; };
 		4D5769716FD9B61E9664A40CFB18B1DD /* Pods-ValidationTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D6B7811E5DA0D98CC4A5F957757A0A9 /* ValidationTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValidationTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8C2A18BCD4D75FAE3643EA8FD28E37 /* ValidationTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValidationTextField-Info.plist"; sourceTree = "<group>"; };
 		51A4B5FC8EBECEC1ABDBF3516412DD50 /* Pods-ValidationTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValidationTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C11F57D7B631575234BFB31C6617594 /* ValidationTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ValidationTextField.modulemap; sourceTree = "<group>"; };
+		7E5C709DB5B4EEC23BDE514D7BD5C57D /* error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = error.png; path = ValidationTextField/Assets/error.png; sourceTree = "<group>"; };
 		81413869B558F5C0F7731BFC14AC7DF6 /* Pods-ValidationTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValidationTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82314D7FCDD0851E52C611B9D767F767 /* ValidationTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ValidationTextField.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		8495CC61D80C053D4A245D8CB3E7F018 /* Pods-ValidationTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8FD89C6E81F65A9D05634A9939E084E8 /* Pods-ValidationTextField_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Example-Info.plist"; sourceTree = "<group>"; };
-		9542B0DDAEFF720700AE48896922FC82 /* ValidationTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValidationTextField-Info.plist"; sourceTree = "<group>"; };
+		9B6FAC2E04FF9A4D7F2D3BA880B766D3 /* ValidationTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValidationTextField-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E54D9E6D2A4350A7A73E14843ACCCB7 /* Pods-ValidationTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValidationTextField_Tests-Info.plist"; sourceTree = "<group>"; };
-		9F0F8F118E973912D4E1309A176EA8DB /* ValidationTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValidationTextField.xcconfig; sourceTree = "<group>"; };
 		ABCB9C9B6DA53B0E45EEB8176106A1CC /* Pods-ValidationTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ValidationTextField_Tests.modulemap"; sourceTree = "<group>"; };
-		AF0BF6E46110A46A7A479094B903D475 /* ValidationTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValidationTextField-dummy.m"; sourceTree = "<group>"; };
 		B0039FBBAA3099D73375FC4A70FAF7BC /* Pods-ValidationTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValidationTextField_Example-umbrella.h"; sourceTree = "<group>"; };
 		B67B9DA4598C3FA308641E99615ECD12 /* Pods-ValidationTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValidationTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		B9DCD6B591513A5FF553BF50CB87668C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BC96540E7F4732096C4B016C482C5496 /* Pods-ValidationTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValidationTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BDCC6A5F8B90712EB8CFCA58EC93EF61 /* Pods_ValidationTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValidationTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFA61208F755962A6E338895C383FAB9 /* ValidationTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValidationTextField-prefix.pch"; sourceTree = "<group>"; };
-		C91F2DA4B25B4CAFB7F5156172EA0768 /* ValidationTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ValidationTextField.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		BF2CE532E5FCEFE2D82D34A02AEB4BC3 /* ValidationTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationTextField.swift; path = ValidationTextField/Classes/ValidationTextField.swift; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D1EEAE99F88BEE938A8519799BF4E68C /* Pods-ValidationTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D77826EFAB1DB9287FD93C017752DDAA /* Pods-ValidationTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValidationTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB9251DFBA56FCD8AB0D34C6255A24FB /* ValidationTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValidationTextField-umbrella.h"; sourceTree = "<group>"; };
-		E4F474B5307AA99DCC494FFCFB7A0BF7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D79C7A5DA3B7CAA4E7DFC569136844CB /* ValidationTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValidationTextField.xcconfig; sourceTree = "<group>"; };
+		DABD14F99A467C39B391EEA084D5D415 /* success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = success.png; path = ValidationTextField/Assets/success.png; sourceTree = "<group>"; };
+		E5B949545CA1BBC15BA7DE642D173E5D /* ValidationTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValidationTextField-dummy.m"; sourceTree = "<group>"; };
+		EFD2CECA789442FA7B44A90C71B8E0EE /* ValidationTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValidationTextField-prefix.pch"; sourceTree = "<group>"; };
 		F481EE39A5A0E5916DE8DB7B99E49AE4 /* Pods-ValidationTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ValidationTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,15 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0229749F6418017ADF3217EED18A844D /* ValidationTextField */ = {
+		0C3FBF95ACBAB6596F67F3CD88C0EBBF /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				121CC89A44DFFBA5B796A0A797AAB2A7 /* ValidationTextField.swift */,
-				97C6D91F7B272EF041B805BB2914E8BC /* Pod */,
-				42777D2C07F5E08222B93EB99755CBC6 /* Support Files */,
+				2A92EA0AD116AC89528E9F0C68E35C88 /* LICENSE */,
+				B9DCD6B591513A5FF553BF50CB87668C /* README.md */,
+				82314D7FCDD0851E52C611B9D767F767 /* ValidationTextField.podspec */,
 			);
-			name = ValidationTextField;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		0F7897D1E93C178D27AB5BB3E3052BC3 /* Products */ = {
@@ -137,15 +140,15 @@
 			path = "Target Support Files/Pods-ValidationTextField_Example";
 			sourceTree = "<group>";
 		};
-		42777D2C07F5E08222B93EB99755CBC6 /* Support Files */ = {
+		1F5ED7DC0A8D2C7C9A96E3041C6B7D03 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C11F57D7B631575234BFB31C6617594 /* ValidationTextField.modulemap */,
-				9F0F8F118E973912D4E1309A176EA8DB /* ValidationTextField.xcconfig */,
-				AF0BF6E46110A46A7A479094B903D475 /* ValidationTextField-dummy.m */,
-				9542B0DDAEFF720700AE48896922FC82 /* ValidationTextField-Info.plist */,
-				BFA61208F755962A6E338895C383FAB9 /* ValidationTextField-prefix.pch */,
-				DB9251DFBA56FCD8AB0D34C6255A24FB /* ValidationTextField-umbrella.h */,
+				439F576FB18A95B9267EC57B6AD1998D /* ValidationTextField.modulemap */,
+				D79C7A5DA3B7CAA4E7DFC569136844CB /* ValidationTextField.xcconfig */,
+				E5B949545CA1BBC15BA7DE642D173E5D /* ValidationTextField-dummy.m */,
+				4E8C2A18BCD4D75FAE3643EA8FD28E37 /* ValidationTextField-Info.plist */,
+				EFD2CECA789442FA7B44A90C71B8E0EE /* ValidationTextField-prefix.pch */,
+				9B6FAC2E04FF9A4D7F2D3BA880B766D3 /* ValidationTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ValidationTextField";
@@ -160,22 +163,24 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		97C6D91F7B272EF041B805BB2914E8BC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E4F474B5307AA99DCC494FFCFB7A0BF7 /* LICENSE */,
-				0DA7E69CEB0D2B3397EE8CF2378F24D3 /* README.md */,
-				C91F2DA4B25B4CAFB7F5156172EA0768 /* ValidationTextField.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		A74A3B28366484601FAC83C6E2F07E88 /* ValidationTextField */ = {
+			isa = PBXGroup;
+			children = (
+				BF2CE532E5FCEFE2D82D34A02AEB4BC3 /* ValidationTextField.swift */,
+				0C3FBF95ACBAB6596F67F3CD88C0EBBF /* Pod */,
+				F141C3040220D5E935BB7AB87602E58A /* Resources */,
+				1F5ED7DC0A8D2C7C9A96E3041C6B7D03 /* Support Files */,
+			);
+			name = ValidationTextField;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B1B7D77C3FEEBD4C6631F2FC822C31D5 /* Pods-ValidationTextField_Tests */ = {
@@ -194,11 +199,19 @@
 			path = "Target Support Files/Pods-ValidationTextField_Tests";
 			sourceTree = "<group>";
 		};
+		C5AA0B9354B647574406FACB2C4337CF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A74A3B28366484601FAC83C6E2F07E88 /* ValidationTextField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				F31ACDD991539A46F27C9227E31DDA0F /* Development Pods */,
+				C5AA0B9354B647574406FACB2C4337CF /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				0F7897D1E93C178D27AB5BB3E3052BC3 /* Products */,
 				6310008B323F7511E77342F43D04D0DE /* Targets Support Files */,
@@ -213,12 +226,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F31ACDD991539A46F27C9227E31DDA0F /* Development Pods */ = {
+		F141C3040220D5E935BB7AB87602E58A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0229749F6418017ADF3217EED18A844D /* ValidationTextField */,
+				7E5C709DB5B4EEC23BDE514D7BD5C57D /* error.png */,
+				DABD14F99A467C39B391EEA084D5D415 /* success.png */,
 			);
-			name = "Development Pods";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +310,7 @@
 				492D1DB0126E4365B58074680FB2744A /* Headers */,
 				1DDF2E1BCB93C60A2B723058766FFD64 /* Sources */,
 				EC8E286CF205DB3389C1ADAE754BAAEC /* Frameworks */,
-				50CF6A3692185D2298E1331BB2736223 /* Resources */,
+				C5CE503FFC19D1A931E8FBBCCC537F4D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,17 +351,19 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		50CF6A3692185D2298E1331BB2736223 /* Resources */ = {
+		87F912EC20B04D197844C36FDCE4DF8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87F912EC20B04D197844C36FDCE4DF8F /* Resources */ = {
+		C5CE503FFC19D1A931E8FBBCCC537F4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47DEFA46C08EC00F935FF76AB3B1A42 /* error.png in Resources */,
+				1C6DB809C0E0EEFAB122B82EF2B2AE06 /* success.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +489,7 @@
 		};
 		0C7BBB48CFE7C114AB8D37DF1AAED67D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F0F8F118E973912D4E1309A176EA8DB /* ValidationTextField.xcconfig */;
+			baseConfigurationReference = D79C7A5DA3B7CAA4E7DFC569136844CB /* ValidationTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -635,7 +651,7 @@
 		};
 		B92AD3AEF01E9B46B47FD54C57CC39FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F0F8F118E973912D4E1309A176EA8DB /* ValidationTextField.xcconfig */;
+			baseConfigurationReference = D79C7A5DA3B7CAA4E7DFC569136844CB /* ValidationTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

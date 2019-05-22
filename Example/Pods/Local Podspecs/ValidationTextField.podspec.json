@@ -1,22 +1,24 @@
 {
   "name": "ValidationTextField",
-  "version": "0.1.0",
-  "summary": "A short description of ValidationTextField.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/devikkim@gmail.com/ValidationTextField",
+  "version": "0.1.1",
+  "summary": "This TextField for Validation ( complete or error )",
+  "description": "'This TextField for Validation ( complete or error )'",
+  "homepage": "https://github.com/devikkim/ValidationTextField.git",
   "license": {
-    "type": "MIT",
+    "type": "Apache 2.0",
     "file": "LICENSE"
   },
   "authors": {
     "devikkim@gmail.com": "devikkim@gmail.com"
   },
   "source": {
-    "git": "https://github.com/devikkim@gmail.com/ValidationTextField.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/devikkim/ValidationTextField.git",
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ValidationTextField/Classes/**/*"
+  "swift_version": "4.0",
+  "source_files": "ValidationTextField/Classes/**/*",
+  "resources": "ValidationTextField/Assets/*.png"
 }
