@@ -31,6 +31,12 @@ open class ValidationTextField: UITextField {
   private var selectedLineHeight: CGFloat = 0
   
   // MARK: IBInspectable
+  @IBInspectable
+  open var isShowTitle: Bool = false {
+    didSet{
+      update()
+    }
+  }
   
   @IBInspectable
   open var titleText: String = "TITLE" {
@@ -250,7 +256,7 @@ open class ValidationTextField: UITextField {
   }
   
   private func titleRectForBounds(_ bounds: CGRect, editing: Bool) -> CGRect {
-    if editing {
+    if isShowTitle {
       return CGRect(
         x: 0,
         y: 0,
@@ -258,12 +264,21 @@ open class ValidationTextField: UITextField {
         height: titleHeight()
       )
     } else {
-      return CGRect(
-        x: 0,
-        y: titleHeight(),
-        width: bounds.size.width,
-        height: titleHeight()
-      )
+      if editing {
+        return CGRect(
+          x: 0,
+          y: 0,
+          width: bounds.size.width,
+          height: titleHeight()
+        )
+      } else {
+        return CGRect(
+          x: 0,
+          y: titleHeight(),
+          width: bounds.size.width,
+          height: titleHeight()
+        )
+      }
     }
   }
   
@@ -303,7 +318,12 @@ open class ValidationTextField: UITextField {
   }
   
   private func updateTitleVisibility(_ animated: Bool = false) {
-    let alpha: CGFloat = isTitleVisible ? 1.0 : 0.0
+    var alpha: CGFloat = isTitleVisible ? 1.0 : 0.0
+    
+    if isShowTitle {
+      alpha = 1.0
+    }
+    
     let frame = titleRectForBounds(bounds, editing: isTitleVisible)
     
     let errorAlpha: CGFloat = isValid || text == "" ? 0.0 : 1.0

@@ -54,6 +54,7 @@
                                                             <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="sorry, enter your name!"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your name"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Name"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShowTitle" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CkR-sk-DYQ" customClass="ValidationTextField" customModule="ValidationTextField">
@@ -66,6 +67,7 @@
                                                             <userDefinedRuntimeAttribute type="string" keyPath="completedTitleText" value="Valid password"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="Invalid password"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Password"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShowTitle" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rw0-nI-IKX" customClass="ValidationTextField" customModule="ValidationTextField">
@@ -78,6 +80,7 @@
                                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm password"/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="errorMessage" value="It is no matched password."/>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Confirm password"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShowTitle" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pJO-sQ-ntS" customClass="ValidationTextField" customModule="ValidationTextField">
