@@ -32,7 +32,7 @@ open class ValidationTextField: UITextField {
   
   // MARK: IBInspectable
   @IBInspectable
-  open var isShowTitle: Bool = false {
+  open var isShowTitle: Bool = true {
     didSet{
       update()
     }
@@ -318,10 +318,12 @@ open class ValidationTextField: UITextField {
   }
   
   private func updateTitleVisibility(_ animated: Bool = false) {
-    var alpha: CGFloat = isTitleVisible ? 1.0 : 0.0
+    let alpha: CGFloat
     
     if isShowTitle {
       alpha = 1.0
+    } else {
+      alpha = isTitleVisible ? 1.0 : 0.0
     }
     
     let frame = titleRectForBounds(bounds, editing: isTitleVisible)
@@ -330,8 +332,10 @@ open class ValidationTextField: UITextField {
     let errorLabelFrame = errorLabelRectForBounds(bounds)
     
     let updateBlock = {() -> Void in
-      self.containerView.alpha = alpha
-      self.containerView.frame = frame
+      if !self.isShowTitle {
+        self.containerView.alpha = alpha
+        self.containerView.frame = frame
+      }
       
       self.errorLabel.alpha = errorAlpha
       self.errorLabel.frame = errorLabelFrame
