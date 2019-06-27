@@ -37,11 +37,22 @@ open class ValidationTextField: UITextField {
       update()
     }
   }
+  @IBInspectable
+  open var isUseTitle: Bool = true {
+    didSet {
+      update()
+    }
+  }
   
   @IBInspectable
   open var titleText: String = "TITLE" {
     didSet {
       update()
+      
+      statusImageView.heightAnchor.constraint(equalToConstant: max(titleFont.lineHeight, titleLabel.intrinsicContentSize.height)).isActive = true
+      statusImageView.widthAnchor.constraint(equalToConstant: max(titleFont.lineHeight, titleLabel.intrinsicContentSize.height)).isActive = true
+      
+      statusImageView.layoutIfNeeded()
     }
   }
   
@@ -101,6 +112,16 @@ open class ValidationTextField: UITextField {
   open var placeholderColor: UIColor = UIColor(red:0.49, green:0.49, blue:0.49, alpha:1.0) {
     didSet {
       updatePlaceholder()
+    }
+  }
+  
+  @IBInspectable
+  open var leftImage: UIImage? {
+    didSet {
+      leftViewMode = .always
+      let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+      imageView.image = leftImage
+      leftView = imageView
     }
   }
   
@@ -212,8 +233,6 @@ open class ValidationTextField: UITextField {
     
     statusImageView.translatesAutoresizingMaskIntoConstraints = false
     statusImageView.contentMode = .scaleAspectFill
-    statusImageView.heightAnchor.constraint(equalToConstant: titleFont.lineHeight).isActive = true
-    statusImageView.widthAnchor.constraint(equalToConstant: titleFont.lineHeight).isActive = true
     
     containerView = UIStackView()
     containerView.axis = .horizontal
@@ -221,9 +240,11 @@ open class ValidationTextField: UITextField {
     
     containerView.addArrangedSubview(titleLabel)
     containerView.addArrangedSubview(statusImageView)
+    containerView.addArrangedSubview(UILabel())
     
     containerView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
     containerView.translatesAutoresizingMaskIntoConstraints = false
+    
     addSubview(containerView)
   }
   
@@ -371,11 +392,23 @@ open class ValidationTextField: UITextField {
       lineView.backgroundColor = titleColor
     }
     
+    if isUseTitle {
+      containerView.isHidden = false
+      containerView.alpha = 1.0
+    } else {
+      containerView.isHidden = true
+      containerView.alpha = 0.0
+    }
+    
     titleLabel.text = titleText
     titleLabel.textColor = titleColor
     titleLabel.font = titleFont
     
     updateTitleVisibility(true)
+    
+    if !isEnabled {
+      lineView.backgroundColor = disabledColor
+    }
   }
   
   private func updatePlaceholder() {
@@ -421,8 +454,10 @@ open class ValidationTextField: UITextField {
     let superRect = super.editingRect(forBounds: bounds)
     let titleHeight = self.titleHeight()
     
+    let padding: CGFloat = leftImage == nil ? 0 : 5
+    
     return CGRect(
-      x: superRect.origin.x,
+      x: superRect.origin.x + padding,
       y: titleHeight,
       width: superRect.size.width,
       height: superRect.size.height - titleHeight - selectedLineHeight
@@ -430,11 +465,26 @@ open class ValidationTextField: UITextField {
   }
   
   override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+    let superRect = super.editingRect(forBounds: bounds)
+    let titleHeight = self.titleHeight()
+    
+    let padding: CGFloat = leftImage == nil ? 0 : 5
+    
     let rect = CGRect(
-      x: 0,
-      y: titleHeight(),
+      x: superRect.origin.x + padding,
+      y: titleHeight,
       width: bounds.size.width,
-      height: bounds.size.height - titleHeight() - selectedLineHeight
+      height: bounds.size.height - titleHeight - selectedLineHeight
+    )
+    return rect
+  }
+  
+  override open func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+    let rect = CGRect (
+      x: 0,
+      y: (titleHeight() + (bounds.size.height - titleHeight() - selectedLineHeight) / 2) - 10 ,
+      width: 20,
+      height: 20
     )
     return rect
   }
