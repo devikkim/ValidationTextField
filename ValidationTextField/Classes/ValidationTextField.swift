@@ -63,7 +63,7 @@ open class ValidationTextField: UITextField {
       createTitleLabel()
     }
   }
-    @IBInspectable
+  @IBInspectable
   open var titleColor: UIColor = UIColor(red:0.49, green:0.49, blue:0.49, alpha:1.0) {
     didSet{
       update()
@@ -136,6 +136,8 @@ open class ValidationTextField: UITextField {
   
   open var errorImage: UIImage?
   
+  open lazy var statusImageView = UIImageView()
+  
   private lazy var titleLabel = UILabel()
   
   private lazy var errorLabel = UILabel()
@@ -143,8 +145,6 @@ open class ValidationTextField: UITextField {
   private lazy var lineView = UIView()
   
   private lazy var containerView = UIStackView()
-  
-  private lazy var statusImageView = UIImageView()
   
   private var validateStatus: ValidateType = .ready {
     didSet {
@@ -252,7 +252,7 @@ open class ValidationTextField: UITextField {
     lineView.isUserInteractionEnabled = false
     lineView.backgroundColor = titleColor
     configureDefaultLineHeight()
-
+    
     lineView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
     addSubview(lineView)
   }
@@ -377,13 +377,13 @@ open class ValidationTextField: UITextField {
         options: animationOptions,
         animations: { () -> Void in
           updateBlock()
-        },
+      },
         completion: nil)
     }
   }
   
   private func update(){
-    if !isValid && isEditing && text != "" {
+    if !isValid && text != "" {
       errorLabel.text = errorMessage
       errorLabel.textColor = errorColor
       errorLabel.font = errorFont
